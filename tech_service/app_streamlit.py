@@ -21,23 +21,20 @@ from services import (
 
 st.set_page_config(page_title="Tech Service", page_icon="🛠️", layout="wide")
 
-# --- Technician auth (simple password gate) ---
+# ---- technician auth ----
 if "tech_authed" not in st.session_state:
     st.session_state.tech_authed = False
 
-# Prefer environment variable; fallback to Streamlit secrets; if empty, login will always fail until you set it.
-def _get_tech_password() -> str:
-    # 1) prefer environment variable
-    env = os.getenv("TECHNICIAN_PASSWORD")
-    if env:
-        return env
-    # 2) try secrets.toml if it exists; swallow the error if not
-    try:
-        return st.secrets["TECHNICIAN_PASSWORD"]
-    except Exception:
-        return ""  # no password configured
+# Hardcoded fallback (works even if no env/secrets configured)
+TECH_PASSWORD = "Analiz-teknik321"  # <-- set it here
 
-TECH_PASSWORD = _get_tech_password()
+# If you still want to allow overrides via env/secrets, keep these lines:
+import os
+try:
+    TECH_PASSWORD = os.getenv("TECHNICIAN_PASSWORD", TECH_PASSWORD)
+    TECH_PASSWORD = st.secrets.get("TECHNICIAN_PASSWORD", TECH_PASSWORD)
+except Exception:
+    pass
 
 if not TECH_PASSWORD:
     st.sidebar.warning("TECH password not set. Set env var TECHNICIAN_PASSWORD or add it to .streamlit/secrets.toml")
