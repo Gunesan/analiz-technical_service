@@ -1,0 +1,43 @@
+{
+  "id": "b5066c4a018349fb85d370fbc28504a5",
+  "claim_code": "K6O9PD7",
+  "name": "gunes we",
+  "email": "gunes@gmail.com",
+  "phone": "",
+  "device_type": "Laptop",
+  "brand": "apple",
+  "model": "4",
+  "serial": "",
+  "accessories": "",
+  "description": "screen",
+  "status": "repairing",
+  "status_history": [
+    {
+      "at": "2025-08-11T13:33:24Z",
+      "status": "new",
+      "note": "Ticket created",
+      "by": "front desk"
+    },
+    {
+      "at": "2025-08-11T13:34:00Z",
+      "status": "diagnosing",
+      "note": "new screen needed",
+      "by": "technician"
+    },
+    {
+      "at": "2025-08-12T10:00:04Z",
+      "status": "diagnosing",
+      "note": "",
+      "by": "technician"
+    },
+    {
+      "at": "2025-08-12T10:00:09Z",
+      "status": "repairing",
+      "note": "",
+      "by": "technician"
+    }
+  ],
+  "labels": [],
+  "created_at": "2025-08-11T13:33:24Z",
+  "updated_at": "2025-08-12T10:00:09Z"
+}

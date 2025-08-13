@@ -1,0 +1,43 @@
+{
+  "id": "ba5da7e8d936457dadf79bb44defb548",
+  "claim_code": "HT4NCMY",
+  "name": "Gunes Eran",
+  "email": "eran@gmail.com",
+  "phone": "",
+  "device_type": "Phone",
+  "brand": "Apple",
+  "model": "2",
+  "serial": "",
+  "accessories": "",
+  "description": "The screen is not working and battery is constantly heating up",
+  "status": "ready for pickup",
+  "status_history": [
+    {
+      "at": "2025-08-12T07:34:36Z",
+      "status": "new",
+      "note": "Ticket created",
+      "by": "front desk"
+    },
+    {
+      "at": "2025-08-12T07:36:13Z",
+      "status": "received",
+      "note": "new set of battery needed",
+      "by": "technician"
+    },
+    {
+      "at": "2025-08-12T07:39:25Z",
+      "status": "ready for pickup",
+      "note": "",
+      "by": "technician"
+    }
+  ],
+  "labels": [
+    {
+      "name": "overheating",
+      "score": 0.85,
+      "source": "rules"
+    }
+  ],
+  "created_at": "2025-08-12T07:34:36Z",
+  "updated_at": "2025-08-12T07:39:25Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "0abbf1d0391145a8a0d5bb5233fcf18b",
+  "claim_code": "7ZN6DAH",
+  "name": "Gunes Eran",
+  "email": "gun@gmail.com",
+  "phone": "",
+  "device_type": "Laptop",
+  "brand": "apple",
+  "model": "MacBook 1",
+  "serial": "",
+  "accessories": "",
+  "description": "the laptop starts but there is nothin g on the screen appearing. I have a black screen",
+  "status": "new",
+  "status_history": [
+    {
+      "at": "2025-08-11T12:11:29Z",
+      "status": "new",
+      "note": "Ticket created",
+      "by": "front desk"
+    }
+  ],
+  "labels": [
+    {
+      "name": "black screen",
+      "score": 1.0,
+      "source": "rules"
+    }
+  ],
+  "created_at": "2025-08-11T12:11:29Z",
+  "updated_at": "2025-08-11T12:11:29Z"
+}

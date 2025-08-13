@@ -1,0 +1,31 @@
+{
+  "id": "f5099edc4cb84bea83810debf831f5f0",
+  "claim_code": "U1A0IZJ",
+  "name": "gunes y",
+  "email": "gunes@gmail.com",
+  "phone": "",
+  "device_type": "Laptop",
+  "brand": "apple",
+  "model": "4",
+  "serial": "",
+  "accessories": "",
+  "description": "battery",
+  "status": "received",
+  "status_history": [
+    {
+      "at": "2025-08-11T13:22:29Z",
+      "status": "new",
+      "note": "Ticket created",
+      "by": "front desk"
+    },
+    {
+      "at": "2025-08-11T13:24:23Z",
+      "status": "received",
+      "note": "yeni batarya",
+      "by": "technician"
+    }
+  ],
+  "labels": [],
+  "created_at": "2025-08-11T13:22:29Z",
+  "updated_at": "2025-08-11T13:24:23Z"
+}

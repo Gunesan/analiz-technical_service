@@ -1,0 +1,25 @@
+{
+  "id": "fa6c96fcc2a64ea58de20c6e695bb14d",
+  "claim_code": "V4PHX6V",
+  "name": "Gunes Yt",
+  "email": "gg@gmail.com",
+  "phone": "",
+  "device_type": "Tablet",
+  "brand": "IOS",
+  "model": "2",
+  "serial": "",
+  "accessories": "",
+  "description": "battery is dead",
+  "status": "new",
+  "status_history": [
+    {
+      "at": "2025-08-11T13:18:02Z",
+      "status": "new",
+      "note": "Ticket created",
+      "by": "front desk"
+    }
+  ],
+  "labels": [],
+  "created_at": "2025-08-11T13:18:02Z",
+  "updated_at": "2025-08-11T13:18:02Z"
+}
