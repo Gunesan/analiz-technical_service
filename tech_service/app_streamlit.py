@@ -26,7 +26,7 @@ if "tech_authed" not in st.session_state:
     st.session_state.tech_authed = False
 
 # Hardcoded fallback (works even if no env/secrets configured)
-TECH_PASSWORD = "Analiz-teknik321"  # <-- set it here
+  # <-- set it here
 
 # If you still want to allow overrides via env/secrets, keep these lines:
 import os
