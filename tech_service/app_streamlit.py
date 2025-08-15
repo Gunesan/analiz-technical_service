@@ -26,18 +26,25 @@ if "tech_authed" not in st.session_state:
     st.session_state.tech_authed = False
 
 # Hardcoded fallback (works even if no env/secrets configured)
-  # <-- set it here
+TECH_PASSWORD: str = ""# <-- set it here
 
-# If you still want to allow overrides via env/secrets, keep these lines:
-import os
+# --- Technician auth (simple password gate) ---
+if "tech_authed" not in st.session_state:
+    st.session_state.tech_authed = False
+
+# Load the password from env or Streamlit secrets (no hardcoded default)
+TECH_PASSWORD: str = ""
 try:
-    TECH_PASSWORD = os.getenv("TECHNICIAN_PASSWORD", TECH_PASSWORD)
-    TECH_PASSWORD = st.secrets.get("TECHNICIAN_PASSWORD", TECH_PASSWORD)
+    TECH_PASSWORD = os.getenv("TECHNICIAN_PASSWORD") or st.secrets.get("TECHNICIAN_PASSWORD", "")
 except Exception:
-    pass
+    # st.secrets may not exist locally; that's fine
+    TECH_PASSWORD = ""
 
 if not TECH_PASSWORD:
-    st.sidebar.warning("TECH password not set. Set env var TECHNICIAN_PASSWORD or add it to .streamlit/secrets.toml")
+    st.sidebar.warning(
+        "TECH password not set. Define TECHNICIAN_PASSWORD in Streamlit Secrets or as an environment variable."
+    )
+
 
 st.sidebar.title("🛠️ Technical Service")
 
