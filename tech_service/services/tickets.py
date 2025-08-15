@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from .models import Ticket
-from .storage import save_ticket, load, list_all, reclassify, update_status, find_by_claim
+from .storage_sqlite import save_ticket, load, list_all, reclassify, update_status, find_by_claim
 
 
 def create_ticket(**kwargs) -> str:
